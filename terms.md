@@ -37,7 +37,10 @@ version you can ask us to do either by email.
 ## 4. Subscriptions and auto-renewal
 
 AnyAccent offers premium content through auto-renewing subscriptions, currently **1 month**
-and **3 months**.
+and **1 year**. There is no free trial.
+
+If you subscribed before version 1.7, to the earlier 1-month or 3-month plan, that plan
+carries on renewing as before until you cancel it.
 
 * **Payment:** charged to your Apple ID account at confirmation of purchase.
 * **Auto-renewal:** renews automatically unless auto-renew is turned off at least 24 hours
