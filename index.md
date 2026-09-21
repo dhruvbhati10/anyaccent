@@ -1,37 +1,212 @@
 # Privacy Policy for AnyAccent
 
-*Last Updated: January 31, 2026*
+*Last updated: 21 September 2026*
 
-**AnyAccent** ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how our application handles your data.
+This policy explains what AnyAccent records, why, how long we keep it, and what you can ask
+us to do about it. It is written to be read, not to be survived.
 
-## 1. No Data Collection
-AnyAccent is an offline-first application. We do not collect, store, transmit, or sell any of your personal data, usage statistics, or audio recordings to external servers.
+**The short version.** To tell you how you pronounced something, we have to listen to it, so
+every practice recording is sent to our server and scored there. From version 1.7 we also
+**keep** those recordings and use them to make the coach better. We never use them to work
+out who you are, we never sell them, and you can have every one of them deleted.
 
-* We do not require you to create an account.
-* We do not use third-party analytics (like Google Analytics or Mixpanel).
-* We do not use tracking cookies or advertising identifiers.
+> **A note on versions.** Some of what follows arrives in **version 1.7**, and is marked. If
+> you are on an earlier version, only the parts not marked that way apply to you: your
+> recordings are sent to our server to be scored and then discarded, unless you switched on
+> *Help improve AnyAccent* in Settings, in which case they are kept.
 
-## 2. Microphone & Audio Data
-To provide pronunciation feedback, AnyAccent requires access to your device's microphone.
+---
 
-* **How it works:** When you record your voice during a drill, the audio is processed locally on your device using Apple's Speech framework and internal algorithms.
-* **No Uploads:** Your voice recordings are never uploaded to our servers or any third-party cloud. They are processed in real-time RAM and immediately discarded after the analysis score is generated.
+## 1. Who we are
 
-## 3. Speech Recognition
-The app uses Apple’s native `SFSpeechRecognizer` to analyze your speech accuracy. We explicitly request on-device speech recognition to ensure offline functionality and privacy. Data sent to Apple's speech engine follows strictly local processing protocols where supported by your device settings.
+AnyAccent is made by Yadu Bhati. For anything in this policy, including a request to see or
+delete your data, write to **yadubhati19@gmail.com**. We answer within 30 days, usually much
+sooner.
 
-## 4. Local Data Storage
-Your app progress, streak data, settings, and unlocked chapters are stored locally on your device using `UserDefaults` and local file storage.
+## 2. What we collect, and why
 
-* If you delete the app, this data will be lost unless you have enabled iCloud device backups (which are managed by Apple, not us).
+### Your voice
 
-## 5. Subscriptions and In-App Purchases
-AnyAccent offers premium features through auto-renewing subscriptions (1-month and 3-month plans).
+When you tap the microphone and speak, the app records you, sends the recording to our
+server, and scores it there. The scoring model has to hear the audio — there is no version
+of this product that works without it.
 
-* **Payment Processing:** All payments are processed entirely and securely by Apple via your Apple ID account. We do not collect, process, or have any access to your credit card information, billing address, or other financial details.
-* **Purchase Validation:** We only receive an anonymous digital receipt from Apple to verify your active subscription status and unlock the premium content locally on your device.
+**From version 1.7 we keep those recordings.** They are the only way we can tell whether the
+coach is right, find the sounds it judges badly, and improve it. Recording is not optional,
+because the recording *is* the product; what is optional is whether yours is used for
+improvement, and whether we keep it at all. See section 6.
 
-## 6. Contact Us
-If you have any questions about this Privacy Policy, please contact us at:
+*Before version 1.7*, recordings were used to produce your score and then discarded, unless
+you turned on *Help improve AnyAccent* in Settings, which was off unless you chose it.
+
+Stored with each recording: the sentence you were given, the scores it received, roughly how
+long it was, the date, and your app's random installation ID.
+
+### Your first language and country — *from version 1.7*
+
+When you start the app we ask which language you grew up speaking. It tells you which sounds
+usually take a speaker of that language the most work, and it labels recordings so we can
+see, for example, that the coach is weaker on Tamil speakers than on Polish ones.
+
+We also store your **country**, taken from your device's Region setting in iOS. This is not
+location data: it is the country you chose in Settings, it is never finer than a country, and
+we do not use GPS, Wi-Fi positioning or your IP address to work out where you are.
+
+You can answer "Prefer not to say" to the language question. We would rather have a blank
+than a guess.
+
+### Your installation ID
+
+The app makes up a random ID the first time you open it and sends it with each request, so
+your scores can be compared against your own history rather than against strangers. It is not
+your name, your email, your Apple ID, your phone number, or your device's advertising
+identifier, and it is not linked to any account, because **AnyAccent has no accounts**. Delete
+the app and the ID is gone for good.
+
+### When you report a wrong result
+
+If you use the report button on a practice screen, we store the reason you picked, the
+sentence, the scores, the full per-sound result, and **any note you type**. Please do not put
+anything private in that note — it is free text and we read it.
+
+### Server logs
+
+Like any web server, ours records each request it receives: the time, what was asked for,
+and the **IP address** it came from. We use this to keep the service running and to stop
+abuse, not to identify you or to work out where you are, and it is not joined to your
+recordings. These logs are kept for up to 30 days and then deleted.
+
+### App usage and crashes — *from version 1.7*
+
+We use **Google Firebase Analytics** to count things like how many lessons are finished and
+where people give up, and **Firebase Crashlytics** to receive crash reports. These see an
+app-instance identifier generated by Google, the device model, the OS version, and the events
+themselves. They do not see your recordings. We do not use advertising identifiers (IDFA),
+we do not track you across other apps or websites, and there are no advertising networks in
+this app. Earlier versions had no analytics of any kind.
+
+### Notifications — *from version 1.7*
+
+If you allow notifications, Firebase Cloud Messaging holds a push token for your device so we
+can send you occasional announcements. Turn notifications off in iOS Settings, or turn "News
+and tips" off in the app, and it stops.
+
+### Payments
+
+Subscriptions are sold and charged by Apple. **We never see your card, your billing address,
+or your Apple ID.** We receive only an anonymous receipt confirming that a subscription is
+active.
+
+### What stays on your phone
+
+Your name, streak, progress, unlocked lessons and settings live on your device. If you have
+iCloud backup on, Apple backs them up under Apple's terms, not ours.
+
+### Who listens
+
+Your recordings are scored by software, automatically. But **a person may listen to them** —
+that is us, checking why the coach got something wrong, or picking examples to train a better
+model. We keep this to what the work needs, and it is one more reason the delete button in
+section 6 exists.
+
+## 3. Automated scoring, and how wrong it can be
+
+Every score in AnyAccent is produced by a machine-learning model. Nobody checks its verdicts
+before you see them.
+
+**It makes mistakes.** It mishears sounds, it marks good pronunciation as poor and poor
+pronunciation as good, and it is less reliable on a noisy recording, a distant microphone, a
+very short clip, or an accent unlike the ones it was trained on. The scores are a practice
+aid, not a measurement: they are not a language test, not a qualification, and not evidence
+of how well anyone speaks English. Please do not treat them as one, and do not let anyone
+else treat them as one either.
+
+Because of that, the scores have no legal or similarly significant effect on you, so Article
+22 GDPR (automated decisions) does not apply. If a result looks wrong, tell us with the
+report button on the practice screen — those reports are the main way the model gets better.
+
+## 4. What we never do
+
+* We **never use your voice to identify you**. We do not create a voiceprint, we do not
+  match recordings against each other to work out that two takes came from the same person
+  beyond the installation ID you already sent, and we do not use any voice biometric system.
+  Nothing in our stored data is designed to recognise a speaker, and we will not train
+  speaker identification or verification on it.
+* We never sell your data, or share it with data brokers or advertisers.
+* We do not ask for your contacts, photos, or location.
+
+## 5. How long we keep it
+
+| What | How long |
+|---|---|
+| Recordings and their scores | **18 months**, then deleted automatically by a job that runs every day |
+| Reports you send us | 18 months |
+| Server logs (including IP) | up to 30 days |
+| Analytics and crash data | Google's own retention, currently up to 14 months |
+| Anything you delete yourself | goes immediately |
+
+## 6. Your choices and your rights
+
+From version 1.7, inside the app under **Settings › Your recordings**:
+
+* **"Don't use mine to improve AnyAccent"** — we still record and score as normal, because
+  that is how the app works, but your takes are excluded from the work of improving the
+  model. This is your right to object under Article 21 GDPR, and it takes one tap.
+* **"Delete my recordings"** — erases every recording we hold from your device, along with
+  its scores and the request records that mention it. It is immediate and cannot be undone.
+  You do not have to contact us or explain why.
+
+**On any version**, writing to **yadubhati19@gmail.com** gets you the same things: a copy of
+what we hold, correction, deletion, restriction, or an objection to our using your recordings
+for improvement. If you are in the EU or UK you can also complain to your national data
+protection authority.
+
+Your first language cannot be changed in the app, because it labels recordings you have
+already sent and changing it would mislabel them rather than correct them. Email us and we
+will fix it properly.
+
+## 7. Our legal basis (EU and UK users)
+
+* **Scoring your speech: performance of a contract** (Art 6(1)(b)). You asked us to tell you
+  how you sounded; we cannot do it without processing the recording.
+* **Keeping recordings to improve the app: legitimate interests** (Art 6(1)(f)) — our
+  interest in a pronunciation coach that actually works, weighed against the fact that the
+  recordings are short, are of a sentence we supplied rather than free speech, are not used
+  to identify anyone, expire in 18 months, and can be deleted by you at any moment. Section 6
+  is how you object.
+* **Analytics, crash reporting and server logs: legitimate interests** (Art 6(1)(f)) in
+  knowing whether the app works and keeping it running.
+* **Notifications: your consent**, given to the iOS prompt, withdrawable in iOS Settings.
+
+We do not treat your recordings as biometric data under Article 9, because we do not process
+them for the purpose of uniquely identifying you — see section 4.
+
+## 8. Where your data goes
+
+Recordings, scores, reports and server logs are stored on a server in **Germany** (Hetzner
+Online GmbH). Analytics, crash reports and push tokens are processed by **Google** (Firebase),
+which may process them in the United States under the European Commission's Standard
+Contractual Clauses and the EU–US Data Privacy Framework. Payments are handled by **Apple**.
+We use no other processors.
+
+## 9. Age
+
+AnyAccent is for people aged **16 and over**. We do not knowingly collect anything from
+children under 16. If you believe a child has used the app, write to us and we will delete
+everything we hold.
+
+## 10. Security
+
+Traffic between the app and our server is encrypted with HTTPS. The server is reachable only
+by key, the admin panel is password-protected and not public, and access to recordings is
+limited to the people who need it for the work described above. No system is perfect; if
+something goes wrong that affects you, we will say so.
+
+## 11. Changes
+
+If we change what we collect or why, we will update this page, change the date at the top,
+and say so in the app before the change applies to new recordings.
+
+## 12. Contact
 
 **Email:** yadubhati19@gmail.com
