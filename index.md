@@ -89,6 +89,20 @@ recordings. We do not use advertising identifiers (IDFA),
 we do not track you across other apps or websites, and there are no advertising networks in
 this app. Earlier versions had no analytics of any kind.
 
+### When there is no connection — *from version 1.7*
+
+If the app cannot reach our server, it can still give you a rough estimate of a take using
+the speech recognition built into your iPhone by **Apple**. That audio is processed by Apple
+under Apple's own privacy terms, not sent to us, and the estimate is clearly marked as
+offline. It is not the AnyAccent coach and can be well off.
+
+### Where you found the app — *from version 1.7*
+
+If you installed AnyAccent after tapping an ad in the App Store, Apple tells us which ad
+campaign it was (Apple Search Ads attribution). This is a campaign number, not anything
+about you: no advertising identifier, no tracking across apps, and no permission prompt
+is involved. We use it only to see which ads are worth paying for.
+
 ### Notifications — *from version 1.7*
 
 If you allow notifications, Firebase Cloud Messaging holds a push token for your device so we
